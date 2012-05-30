@@ -16,8 +16,10 @@ grails.project.dependency.resolution = {
 	}
 
 	plugins {
-        build(":tomcat:$grailsVersion", ":release:1.0.0") {
-            export = false
+        plugins {
+            compile(':maven-publisher:0.8.1'){
+                export:false
+            }
         }
 	}
 }

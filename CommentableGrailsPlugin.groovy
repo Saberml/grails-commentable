@@ -49,6 +49,8 @@ then use the tag library and partial templates to integrate comments into your v
 		}
 	}
 
+    def groupId = "org.icescrum"
+
 	def doWithDynamicMethods = { ctx ->
 		for(domainClass in application.domainClasses) {
 			if(Commentable.class.isAssignableFrom(domainClass.clazz)) {
