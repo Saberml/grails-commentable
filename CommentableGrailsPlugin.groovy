@@ -16,7 +16,7 @@ import org.grails.comments.*
 import grails.util.*
 
 class CommentableGrailsPlugin {
-	def version = "1.0.BUILD-SNAPSHOT"
+	def version = "1.1"
 	def grailsVersion = "1.1 > *"
 	def loadAfter = ["hibernate"]
 
@@ -132,6 +132,12 @@ then use the tag library and partial templates to integrate comments into your v
 						def c = Comment.get(id)
 						if(c) removeComment(c)
 					}
+
+                    deleteComments { ->
+                        getComments()?.each{ Comment c ->
+                            removeComment(c)
+                        }
+                    }
 				}
 			}
 		}
