@@ -16,7 +16,7 @@ import org.grails.comments.*
 import grails.util.*
 
 class CommentableGrailsPlugin {
-	def version = "1.1.1"
+	def version = "1.1.2"
 	def grailsVersion = "1.1 > *"
 	def loadAfter = ["hibernate"]
 
