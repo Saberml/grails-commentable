@@ -54,7 +54,6 @@ class Comment implements Serializable {
 	static mapping = {
 		body type:"text"
 		cache true
-        System.properties["icescrum.mapping"] == 'oracle' ? 'o_comment' : null
 	}
 
 }
