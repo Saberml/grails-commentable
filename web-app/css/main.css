@@ -47,18 +47,6 @@ body {
 	background-color: #abbf78;
 }
 
-/* replace with .no-boxshadow body if you have modernizr available */
-.ie6 body,
-.ie7 body,
-.ie8 body {
-	border-color: #255b17;
-	border-style: solid;
-	border-width: 0 1px;
-}
-
-.ie6 body {
-	height: 100%;
-}
 
 a:link, a:visited, a:hover {
 	color: #48802c;
